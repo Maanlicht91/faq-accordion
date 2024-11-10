@@ -37,6 +37,7 @@ body {
   height: 35.313rem;
   border-radius: 16px;
   font-size: 18px;
+  box-shadow: 0 32px 56px rgba(80, 0, 118, 10%);
 }
 
 .questions-container {
