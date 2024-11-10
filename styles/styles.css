@@ -64,6 +64,7 @@ body {
       font-size: 18px;
       cursor: pointer;
       color: var(--dark-purple);
+      font-weight: 700;
     }
     .question-heading:hover {
       color: #ad28eb;
