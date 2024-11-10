@@ -36,6 +36,7 @@ body {
   width: 37.5rem;
   height: 35.313rem;
   border-radius: 16px;
+  font-size: 18px;
 }
 
 .questions-container {
@@ -51,6 +52,7 @@ body {
   .heading-1 {
     margin-bottom: 2rem;
     font-size: 56px;
+    color: var(--dark-purple);
   }
 
   .question {
@@ -60,6 +62,7 @@ body {
     .question-heading {
       font-size: 18px;
       cursor: pointer;
+      color: var(--dark-purple);
     }
     .question-heading:hover {
       color: #ad28eb;
@@ -75,6 +78,8 @@ body {
     color: var(--grayish-purple);
     display: none;
     margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
   }
   .active {
     display: flex;
