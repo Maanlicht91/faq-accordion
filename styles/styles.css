@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Spicy+Rice&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: var(--light-pink);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.star-icon {
+  width: 40px;
+  padding-right: 1.5rem;
+}
+
+.container {
+  background-color: var(--white);
+  width: 37.5rem;
+  height: 35.313rem;
+  border-radius: 16px;
+}
+
+.questions-container {
+  margin: 40px;
+
+  .fraction {
+    width: 32.5rem;
+    height: 1px;
+    background-color: var(--light-pink);
+    margin: 1.5rem 0;
+  }
+
+  .heading-1 {
+    margin-bottom: 2rem;
+    font-size: 56px;
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .question-heading {
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .question-heading:hover {
+      color: #ad28eb;
+    }
+  }
+  .plus-icon,
+  .minus-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .answer {
+    color: var(--grayish-purple);
+    display: none;
+    margin-top: 1.5rem;
+  }
+  .active {
+    display: flex;
+  }
+
+  .inactive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 20.438rem;
+    height: 32.938rem;
+  }
+  .questions-container {
+    margin: 20px;
+
+    .fraction {
+      margin: 1.25rem 0;
+    }
+    .heading-1 {
+      margin-bottom: 1.5rem;
+      font-size: 32px;
+    }
+    .answer {
+      font-size: 14px;
+    }
+  }
+
+  .star-icon {
+    width: 24px;
+    padding-right: 1.5rem;
+  }
+}
